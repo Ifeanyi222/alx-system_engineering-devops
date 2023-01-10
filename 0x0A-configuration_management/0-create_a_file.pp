@@ -1,6 +1,6 @@
 #this manifest create a file at /tmp
 
-file {'title':
+file {'/tmp/school':
 	ensure => 'file',
 	owner => 'www-data',
 	group => 'www-data',
