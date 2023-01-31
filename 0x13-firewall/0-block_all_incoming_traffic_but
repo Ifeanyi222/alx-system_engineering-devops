@@ -1,0 +1,20 @@
+
+sudo apt update
+sudo apt install ufw -y
+
+
+#To view the status
+sudo systemctl status ufw
+
+#To configure the outgoing traffic
+sudo ufw default allow outgoing
+
+#To configure the incoming traffic
+sudo ufw default deny incoming
+sudo ufw allow 22
+sudo ufw allow 443
+sudo ufw allow 80
+
+#To enable ufw
+sudo ufw enable
+
